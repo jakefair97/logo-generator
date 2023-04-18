@@ -8,7 +8,7 @@ inquirer
             type: 'list',
             name: 'shape',
             message: 'Choose a shape:',
-            choices: ['Circle, Square, Triangle'],
+            choices: ['Circle', 'Square', 'Triangle'],
         },
         {
             type: 'input',
@@ -50,7 +50,13 @@ inquirer
         }
 
         let textSvg = text 
-        ? `<text x="50" y="50" text-anchor="middle" fill="${textColor}">${text}</text>`
+        ? `<text x="150" y="120" font-size="50" text-anchor="middle" fill="${textColor}">${text}</text>`
         : '';
 
+        const svgContent = `<svg xmlns="http://www.w3.org/2000/svg" version='1.1' width="300" height="200">${shapeSvg}${textSvg}</svg>`;
+
+        fs.writeFile('./examples/logo.svg', svgContent, (err) => {
+            if (err) throw err;
+            console.log('Shape saved to logo.svg!');
+          });
     })
