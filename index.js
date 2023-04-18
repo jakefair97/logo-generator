@@ -57,6 +57,6 @@ inquirer
 
         fs.writeFile('./examples/logo.svg', svgContent, (err) => {
             if (err) throw err;
-            console.log('Shape saved to logo.svg!');
+            console.log('Generated logo.svg');
           });
     })
