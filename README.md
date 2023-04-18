@@ -18,7 +18,7 @@ https://drive.google.com/file/d/1PJfJNY_iXq6Wxa9j5nDspf0yQQNcdVeB/view
 To run unit tests for this application, install the npm Jest package, add `"test": "jest"` to the scripts section of the package.json file, and run `npm run tests` from the command line to execute the tests in the shapes.test.js file.
 
 ## Credits
-This Node app utilizes the Inquirer package to gather information from the user to generate the logo.svg file. 
+This Node app utilizes the Inquirer package to gather information from the user to generate the logo.svg file. This app also utilizes the Jest package for unit testing.
 
 ## License
 Please refer to the LICENSE in the repo.
